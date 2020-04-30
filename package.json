@@ -1,0 +1,32 @@
+{
+    "name": "good-news-theme",
+    "displayName": "good-news-theme",
+    "description": "Black text on white with color highlights",
+    "publisher": "dannycoates",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dannycoates/good-news-theme.git"
+    },
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Good News Light",
+                "uiTheme": "vs",
+                "path": "./themes/Good News-color-theme.json"
+            }
+        ]
+    },
+    "scripts": {
+        "package": "vsce package"
+    },
+    "devDependencies": {
+        "vsce": "^1.75.0"
+    }
+}
