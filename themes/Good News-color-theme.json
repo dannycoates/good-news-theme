@@ -36,6 +36,7 @@
 		"editor.findMatchHighlightBackground": "#32e7ed50",
 		"editor.findRangeHighlightBackground": "#32e7ed20",
 		"editor.foldBackground": "#d1d1d040",
+		"editor.foreground": "#6C6F72",
 		"editor.hoverHighlightBackground": "#eddc3260",
 		"editor.lineHighlightBackground": "#d1d1d050",
 		"editor.rangeHighlightBackground": "#d1d1d050",
@@ -169,6 +170,7 @@
 		"tab.unfocusedInactiveForeground": "#25262760",
 		"tab.unfocusedInactiveModifiedBorder": "#ff0000",
 		"terminal.background": "#f0f0ef",
+		"textPreformat.foreground": "#252627",
 		// "terminal.foreground": "#2e3440",
 		// "terminal.ansiBlack": "#eceff4",
 		// "terminal.ansiRed": "#bf616a",
@@ -209,6 +211,10 @@
 				"foreground": "#252627",
 				"fontStyle": "bold"
 		},
+		"interface": {
+			"foreground": "#6c6f72",
+			"fontStyle": "bold"
+		},
 		"enum": {
 				"foreground": "#252627",
 				"fontStyle": "bold"
@@ -220,6 +226,10 @@
 		"variable.local": {
 				"foreground": "#6c6f72",
 				"fontStyle": "bold"
+		},
+		"method.declaration": {
+			"foreground": "#252627",
+			"fontStyle": "italic bold"
 		}
 },
 	"tokenColors": [
@@ -281,7 +291,7 @@
 			"name": "Entity Name Class/Type",
 			"scope": ["entity.name.class", "entity.name.type.class"],
 			"settings": {
-				"foreground": "#252627",
+				"foreground": "#6c6f72",
 				"fontStyle": "italic bold"
 			}
 		},
@@ -584,7 +594,7 @@
 			"name": "Variable Language",
 			"scope": "variable.language",
 			"settings": {
-				"foreground": "#658db5"
+				"foreground": "#6c6f72"
 			}
 		},
 		{
@@ -676,7 +686,7 @@
 				"source.js meta.decorator entity.name.function"
 			],
 			"settings": {
-				"foreground": "#d08770"
+				"foreground": "#252627"
 			}
 		},
 		{
@@ -879,7 +889,7 @@
 				"source.tsx meta.decorator entity.name.function"
 			],
 			"settings": {
-				"foreground": "#d08770"
+				"foreground": "#252627"
 			}
 		},
 		{
