@@ -7,7 +7,7 @@
         "type": "git",
         "url": "https://github.com/dannycoates/good-news-theme.git"
     },
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.44.0"
     },
@@ -27,6 +27,6 @@
         "package": "vsce package"
     },
     "devDependencies": {
-        "vsce": "^1.75.0"
+        "@vscode/vsce": "^2.30.0"
     }
 }
