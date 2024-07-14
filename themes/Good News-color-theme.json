@@ -66,6 +66,8 @@
     "editorHoverWidget.foreground": "#252627",
     "editorIndentGuide.activeBackground1": "#d1d1d0b0",
     "editorIndentGuide.background1": "#d1d1d040",
+    "editorInlayHint.background": "#d1d1d020",
+    "editorInlayHint.foreground": "#59749380",
     "editorLineNumber.activeForeground": "#6c6f72",
     "editorLineNumber.foreground": "#d1d1d0",
     "editorLink.activeForeground": "#1569bd",
@@ -76,7 +78,7 @@
     "editorOverviewRuler.findMatchForeground": "#5eed32b0",
     "editorOverviewRuler.modifiedForeground": "#ed9f32a0",
     "editorOverviewRuler.rangeHighlightForeground": "#eddc3280",
-    "editorOverviewRuler.selectionHighlightForeground": "#eddc3280",
+    "editorOverviewRuler.selectionHighlightForeground": "#32e7ed80",
     "editorOverviewRuler.wordHighlightForeground": "#32e7ed80",
     "editorOverviewRuler.wordHighlightStrongForeground": "#32e7ede0",
     "editorPane.background": "#f0f0ef",
@@ -184,7 +186,7 @@
     },
     "method.declaration": {
       "foreground": "#252627",
-      "fontStyle": "italic bold",
+      "fontStyle": "italic bold"
     }
   },
   "tokenColors": [
@@ -202,9 +204,10 @@
     },
     {
       "name": "Comment",
-      "scope": "comment",
+      "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
-        "foreground": "#6c6f72"
+        "foreground": "#597493",
+        "fontStyle": "italic"
       }
     },
     {
@@ -473,7 +476,8 @@
       "name": "Support Constant",
       "scope": "support.constant",
       "settings": {
-        "foreground": "#658db5"
+        "foreground": "#252627",
+        "fontStyle": "underline"
       }
     },
     {
