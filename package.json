@@ -7,7 +7,7 @@
         "type": "git",
         "url": "https://github.com/dannycoates/good-news-theme.git"
     },
-    "version": "0.0.5",
+    "version": "0.0.6",
     "engines": {
         "vscode": "^1.44.0"
     },
@@ -25,6 +25,13 @@
                 "label": "Good News Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Good News Dark-color-theme.json"
+            }
+        ],
+        "iconThemes": [
+            {
+                "id": "good-news-icons",
+                "label": "Good News Icons",
+                "path": "./icons/file-icon-theme.json"
             }
         ]
     },
