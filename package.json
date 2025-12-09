@@ -7,7 +7,7 @@
         "type": "git",
         "url": "https://github.com/dannycoates/good-news-theme.git"
     },
-    "version": "0.0.3",
+    "version": "0.0.4",
     "engines": {
         "vscode": "^1.44.0"
     },
@@ -20,6 +20,11 @@
                 "label": "Good News Light",
                 "uiTheme": "vs",
                 "path": "./themes/Good News-color-theme.json"
+            },
+            {
+                "label": "Good News Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Good News Dark-color-theme.json"
             }
         ]
     },
@@ -27,6 +32,6 @@
         "package": "vsce package"
     },
     "devDependencies": {
-        "@vscode/vsce": "^2.30.0"
+        "@vscode/vsce": "^3.7.1"
     }
 }
