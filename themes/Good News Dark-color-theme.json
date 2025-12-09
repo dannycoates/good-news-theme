@@ -353,6 +353,14 @@
       }
     },
     {
+      "name": "Function Definition",
+      "scope": "meta.definition.function entity.name.function",
+      "settings": {
+        "foreground": "#fceee0",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "name": "This",
       "scope": "variable.language.this",
       "settings": {
