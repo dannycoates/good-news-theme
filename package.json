@@ -7,7 +7,7 @@
         "type": "git",
         "url": "https://github.com/dannycoates/good-news-theme.git"
     },
-    "version": "0.0.4",
+    "version": "0.0.5",
     "engines": {
         "vscode": "^1.44.0"
     },
