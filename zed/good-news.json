@@ -287,7 +287,7 @@
             "font_weight": 700
           },
           "text.literal": {
-            "color": "#67ab89"
+            "color": "#252627"
           },
           "title": {
             "color": "#67aba9",
@@ -299,6 +299,10 @@
           },
           "variable": {
             "color": "#6c6f72"
+          },
+          "variable.key": {
+            "color": "#252627",
+            "font_weight": 700
           },
           "variable.special": {
             "color": "#6c6f72",
@@ -594,7 +598,7 @@
             "font_weight": 700
           },
           "text.literal": {
-            "color": "#67ab89"
+            "color": "#fceee0"
           },
           "title": {
             "color": "#67aba9",
@@ -606,6 +610,10 @@
           },
           "variable": {
             "color": "#b2a092"
+          },
+          "variable.key": {
+            "color": "#fceee0",
+            "font_weight": 700
           },
           "variable.special": {
             "color": "#b2a092",

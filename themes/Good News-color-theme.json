@@ -865,6 +865,13 @@
       }
     },
     {
+      "name": "[Markdown] Inline Raw String",
+      "scope": "markup.inline.raw.string.markdown",
+      "settings": {
+        "foreground": "#252627"
+      }
+    },
+    {
       "name": "[Markdown] Markup Italic",
       "scope": "text.html.markdown markup.italic",
       "settings": {
@@ -1179,6 +1186,14 @@
       "settings": {
         "foreground": "#252627",
         "fontStyle": ""
+      }
+    },
+    {
+      "name": "[dotenv] Variable Key",
+      "scope": "variable.key.dotenv",
+      "settings": {
+        "foreground": "#252627",
+        "fontStyle": "bold"
       }
     }
   ]
