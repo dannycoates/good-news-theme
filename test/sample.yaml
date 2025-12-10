@@ -1,0 +1,78 @@
+# Application configuration
+name: my-application
+version: 1.0.0
+
+# Server settings
+server:
+  host: localhost
+  port: 8080
+  ssl:
+    enabled: true
+    certificate: /path/to/cert.pem
+    key: /path/to/key.pem
+
+# Database configuration
+database:
+  driver: postgresql
+  host: localhost
+  port: 5432
+  name: mydb
+  credentials:
+    username: admin
+    password: secret
+
+# Feature flags
+features:
+  - authentication
+  - authorization
+  - caching
+  - logging
+
+# Environment-specific overrides
+environments:
+  development:
+    debug: true
+    log_level: debug
+  production:
+    debug: false
+    log_level: warn
+
+# Complex nested structure
+services:
+  api:
+    replicas: 3
+    memory: 512Mi
+    cpu: 250m
+    env:
+      - name: NODE_ENV
+        value: production
+      - name: API_KEY
+        valueFrom:
+          secretKeyRef:
+            name: api-secrets
+            key: api-key
+
+# Multi-line strings
+description: |
+  This is a multi-line
+  description that preserves
+  line breaks.
+
+inline_description: >
+  This is a folded multi-line
+  string that will be joined
+  into a single line.
+
+# Anchors and aliases
+defaults: &defaults
+  timeout: 30
+  retries: 3
+
+service_a:
+  <<: *defaults
+  name: Service A
+
+service_b:
+  <<: *defaults
+  name: Service B
+  timeout: 60  # Override default

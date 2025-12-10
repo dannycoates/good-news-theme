@@ -1,0 +1,23 @@
+diff --git a/src/config.js b/src/config.js
+index 1234567..abcdefg 100644
+--- a/src/config.js
++++ b/src/config.js
+@@ -1,10 +1,15 @@
+ const config = {
+   name: 'my-app',
+-  version: '1.0.0',
++  version: '2.0.0',
+   settings: {
+-    debug: true,
+-    timeout: 5000,
++    debug: false,
++    timeout: 10000,
++    maxRetries: 3,
+   },
++  features: {
++    newFeature: true,
++    legacyMode: false,
++  },
+ };
+
+ module.exports = config;

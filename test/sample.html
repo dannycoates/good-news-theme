@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { margin: 0; }
+  </style>
+</head>
+<body>
+  <!-- This is a comment -->
+  <header id="main-header" class="container">
+    <h1 data-value="test">Welcome</h1>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <p>Special characters: &amp; &lt; &gt; &quot; &copy;</p>
+      <p>Unicode: &#x263A; &#9786;</p>
+    </article>
+
+    <form action="/submit" method="POST">
+      <input type="text" name="username" required>
+      <button type="submit" disabled>Submit</button>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('Ready');
+    });
+  </script>
+</body>
+</html>

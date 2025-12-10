@@ -1,0 +1,77 @@
+/* CSS Variables and Root */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: rgb(52, 73, 94);
+  --spacing: 1rem;
+}
+
+/* Element selectors */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--primary-color);
+}
+
+/* Class and ID selectors */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Pseudo-classes and pseudo-elements */
+a:hover,
+a:focus {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+.button::before {
+  content: "";
+  display: block;
+}
+
+/* Attribute selectors */
+input[type="text"] {
+  border: 1px solid #ccc;
+}
+
+[data-active="true"] {
+  opacity: 1;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1a1a;
+    color: #ffffff;
+  }
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Import */
+@import url("https://fonts.googleapis.com/css2?family=Inter");

@@ -378,7 +378,8 @@
       "name": "Entity Other Attribute Name",
       "scope": "entity.other.attribute-name",
       "settings": {
-        "foreground": "#252627"
+        "foreground": "#252627",
+        "fontStyle": "bold"
       }
     },
     {
@@ -480,6 +481,13 @@
       }
     },
     {
+      "name": "Punctuation Definition",
+      "scope": "punctuation.definition",
+      "settings": {
+        "foreground": "#9a9a99"
+      }
+    },
+    {
       "name": "",
       "scope": "punctuation.definition.template-expression",
       "settings": {
@@ -513,7 +521,7 @@
         "punctuation.start.definition.comment"
       ],
       "settings": {
-        "foreground": "#6c6f72"
+        "foreground": "#597493"
       }
     },
     {
@@ -551,7 +559,7 @@
       "name": "Storage",
       "scope": "storage",
       "settings": {
-        "foreground": "#bebebd"
+        "foreground": "#6c6f72"
       }
     },
     {
@@ -616,7 +624,8 @@
       "name": "Support Type Exception",
       "scope": "support.type.exception",
       "settings": {
-        "foreground": "#67ab89"
+        "foreground": "#6c6f72",
+        "fontStyle": "bold"
       }
     },
     {
@@ -637,7 +646,7 @@
       "name": "Token Info",
       "scope": "token.info-token",
       "settings": {
-        "foreground": "#67aba9"
+        "foreground": "#6c6f72"
       }
     },
     {
@@ -673,14 +682,14 @@
       "name": "[CSS] Constant Other Color RGB Value",
       "scope": "source.css constant.other.color.rgb-value",
       "settings": {
-        "foreground": "#a4779c"
+        "foreground": "#6c6f72"
       }
     },
     {
       "name": "[CSS](Function) Meta Property-Value",
       "scope": "source.css meta.property-value",
       "settings": {
-        "foreground": "#67aba9"
+        "foreground": "#6c6f72"
       }
     },
     {
@@ -697,7 +706,7 @@
       "name": "[CSS] Punctuation Definition Keyword",
       "scope": "source.css punctuation.definition.keyword",
       "settings": {
-        "foreground": "#658db5"
+        "foreground": "#6c6f72"
       }
     },
     {
@@ -757,7 +766,7 @@
       "name": "[JavaScript] Meta Object-Literal Key",
       "scope": "source.js meta.object-literal.key",
       "settings": {
-        "foreground": "#67aba9"
+        "foreground": "#6c6f72"
       }
     },
     {
@@ -841,17 +850,18 @@
       "name": "[Markdown] Markup Fenced Code Block",
       "scope": [
         "text.html.markdown markup.fenced_code.block",
-        "text.html.markdown markup.fenced_code.block punctuation.definition"
+        "text.html.markdown markup.fenced_code.block punctuation.definition",
+        "markup.fenced_code.block.markdown"
       ],
       "settings": {
-        "foreground": "#67ab89"
+        "foreground": "#6c6f72"
       }
     },
     {
       "name": "[Markdown] Markup Heading",
       "scope": "markup.heading",
       "settings": {
-        "foreground": "#67aba9"
+        "foreground": "#6c6f72"
       }
     },
     {
@@ -869,6 +879,28 @@
       "scope": "markup.inline.raw.string.markdown",
       "settings": {
         "foreground": "#252627"
+      }
+    },
+    {
+      "name": "[Markdown] Raw Punctuation",
+      "scope": "punctuation.definition.raw.markdown",
+      "settings": {
+        "foreground": "#252627"
+      }
+    },
+    {
+      "name": "[Markdown] Section Name",
+      "scope": "entity.name.section.markdown",
+      "settings": {
+        "foreground": "#597493"
+      }
+    },
+    {
+      "name": "[Markdown] Link Inline",
+      "scope": "meta.link.inline.markdown",
+      "settings": {
+        "foreground": "#6c6f72",
+        "fontStyle": "bold"
       }
     },
     {
@@ -931,7 +963,7 @@
         "text.html.markdown string.other.link.title"
       ],
       "settings": {
-        "foreground": "#67aba9"
+        "foreground": "#6c6f72"
       }
     },
     {
@@ -983,7 +1015,7 @@
         "source.tsx meta.object-literal.key entity.name.function"
       ],
       "settings": {
-        "foreground": "#67aba9"
+        "foreground": "#6c6f72"
       }
     },
     {
@@ -1027,7 +1059,7 @@
       "name": "[XML] Entity Name Tag Namespace",
       "scope": "text.xml entity.name.tag.namespace",
       "settings": {
-        "foreground": "#67ab89"
+        "foreground": "#6c6f72"
       }
     },
     {

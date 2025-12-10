@@ -1,0 +1,74 @@
+// Variables
+$primary: #3498db;
+$secondary: #2ecc71;
+$spacing: 8px;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin responsive($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Nesting
+.card {
+  padding: $spacing * 2;
+  border-radius: 4px;
+
+  &__header {
+    font-size: 1.5rem;
+    color: $primary;
+  }
+
+  &__body {
+    padding: $spacing;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &.is-active {
+    border-color: $secondary;
+  }
+}
+
+// Interpolation
+$property: margin;
+$direction: top;
+
+.element {
+  #{$property}-#{$direction}: 10px;
+}
+
+// Functions
+@function calculate-rem($size) {
+  @return $size / 16px * 1rem;
+}
+
+// Extend
+%button-base {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  @extend %button-base;
+  background: $primary;
+}
+
+// Each loop
+$colors: (primary: blue, secondary: green, danger: red);
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+}

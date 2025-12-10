@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE config SYSTEM "config.dtd">
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+
+<!-- Root configuration element -->
+<config xmlns="http://example.com/config"
+        xmlns:custom="http://example.com/custom"
+        version="1.0">
+
+  <metadata>
+    <name>Application Config</name>
+    <author>Developer</author>
+    <created>2024-01-01</created>
+  </metadata>
+
+  <settings environment="production">
+    <setting key="debug" type="boolean">false</setting>
+    <setting key="timeout" type="integer">30000</setting>
+    <setting key="apiUrl" type="string">
+      <![CDATA[https://api.example.com/v1?param=value&other=test]]>
+    </setting>
+  </settings>
+
+  <custom:extensions>
+    <custom:plugin name="auth" enabled="true">
+      <custom:config>
+        <custom:option name="provider">oauth2</custom:option>
+      </custom:config>
+    </custom:plugin>
+  </custom:extensions>
+
+  <items>
+    <item id="1" active="true">First item</item>
+    <item id="2" active="false">Second item</item>
+    <item id="3" active="true">
+      Third item with <emphasis>nested</emphasis> content
+    </item>
+  </items>
+
+  <!-- Special characters -->
+  <special>
+    <entity>&amp; &lt; &gt; &quot; &apos;</entity>
+    <numeric>&#65; &#x41;</numeric>
+  </special>
+
+</config>

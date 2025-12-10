@@ -1,0 +1,34 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A sample project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "lodash": "~4.17.21"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "config": {
+    "port": 3000,
+    "debug": true,
+    "maxRetries": 5,
+    "timeout": null,
+    "features": ["auth", "api", "websocket"],
+    "database": {
+      "host": "localhost",
+      "port": 5432,
+      "name": "mydb"
+    }
+  },
+  "keywords": ["node", "express", "api"],
+  "author": "Developer <dev@example.com>",
+  "license": "MIT"
+}
