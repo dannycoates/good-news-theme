@@ -163,8 +163,8 @@
         ],
         "syntax": {
           "attribute": {
-            "color": "#6c6f72",
-            "font_style": "italic"
+            "color": "#252627",
+            "font_weight": 700
           },
           "boolean": {
             "color": "#6c6f72"
@@ -290,7 +290,7 @@
             "color": "#252627"
           },
           "title": {
-            "color": "#67aba9",
+            "color": "#6c6f72",
             "font_weight": 700
           },
           "type": {
@@ -474,8 +474,8 @@
         ],
         "syntax": {
           "attribute": {
-            "color": "#b2a092",
-            "font_style": "italic"
+            "color": "#fceee0",
+            "font_weight": 700
           },
           "boolean": {
             "color": "#b2a092"
@@ -601,7 +601,7 @@
             "color": "#fceee0"
           },
           "title": {
-            "color": "#67aba9",
+            "color": "#b2a092",
             "font_weight": 700
           },
           "type": {
