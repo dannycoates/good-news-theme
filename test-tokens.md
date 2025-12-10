@@ -1344,3 +1344,101 @@ func generateID() string {
 	return "generated-id"
 }
 ```
+
+---
+
+## TOML
+
+```toml
+# This is a TOML configuration file
+# Top-level comment
+
+title = "TOML Example"
+description = 'Single quoted string'
+
+[owner]
+name = "Tom Preston-Werner"
+dob = 1979-05-27T07:32:00-08:00  # First class dates
+
+[database]
+enabled = true
+ports = [ 8000, 8001, 8002 ]
+data = [ ["delta", "phi"], [3.14] ]
+temp_targets = { cpu = 79.5, case = 72.0 }
+
+[servers]
+
+[servers.alpha]
+ip = "10.0.0.1"
+role = "frontend"
+priority = 1
+
+[servers.beta]
+ip = "10.0.0.2"
+role = "backend"
+priority = 2
+
+# Array of tables
+[[products]]
+name = "Hammer"
+sku = 738594937
+price = 9.99
+in_stock = true
+
+[[products]]
+name = "Nail"
+sku = 284758393
+price = 0.05
+quantity = 500
+
+[[products.reviews]]
+author = "Alice"
+rating = 5
+comment = """
+Multi-line string
+with line breaks preserved
+"""
+
+[[products.reviews]]
+author = "Bob"
+rating = 4
+comment = '''\
+  Literal string with \
+  no escape sequences
+'''
+
+# Inline tables
+point = { x = 1, y = 2 }
+animal = { type.name = "pug" }
+
+# Different number formats
+int1 = +99
+int2 = -17
+int3 = 1_000_000
+hex1 = 0xDEADBEEF
+oct1 = 0o755
+bin1 = 0b11010110
+
+# Floats
+float1 = +1.0
+float2 = 3.1415
+float3 = -0.01
+float4 = 5e+22
+float5 = 1e06
+float6 = -2E-2
+float7 = 6.626e-34
+special1 = inf
+special2 = nan
+
+# Dates and times
+date1 = 2024-01-15
+time1 = 07:32:00
+datetime1 = 2024-01-15T07:32:00Z
+datetime2 = 2024-01-15T07:32:00-07:00
+datetime3 = 2024-01-15 07:32:00
+
+[environment]
+PATH = "/usr/local/bin:/usr/bin"
+HOME = "/home/user"
+DEBUG = false
+```

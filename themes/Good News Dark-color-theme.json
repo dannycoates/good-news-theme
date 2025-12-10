@@ -1228,6 +1228,78 @@
         "foreground": "#fceee0",
         "fontStyle": "bold"
       }
+    },
+    {
+      "name": "[TOML] Table",
+      "scope": [
+        "support.type.property-name.table.toml",
+        "entity.other.attribute-name.table.toml"
+      ],
+      "settings": {
+        "foreground": "#fceee0",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "[TOML] Array Table",
+      "scope": [
+        "support.type.property-name.array.toml",
+        "entity.other.attribute-name.array.toml"
+      ],
+      "settings": {
+        "foreground": "#fceee0",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "[TOML] Key",
+      "scope": [
+        "keyword.key.toml",
+        "support.type.property-name.toml"
+      ],
+      "settings": {
+        "foreground": "#fceee0"
+      }
+    },
+    {
+      "name": "[TOML] String",
+      "scope": "string.quoted.toml",
+      "settings": {
+        "foreground": "#b2a092"
+      }
+    },
+    {
+      "name": "[TOML] Number",
+      "scope": "constant.numeric.toml",
+      "settings": {
+        "foreground": "#fceee0"
+      }
+    },
+    {
+      "name": "[TOML] Boolean",
+      "scope": "constant.language.toml",
+      "settings": {
+        "foreground": "#b2a092"
+      }
+    },
+    {
+      "name": "[TOML] Date/Time",
+      "scope": "constant.other.datetime.toml",
+      "settings": {
+        "foreground": "#b2a092"
+      }
+    },
+    {
+      "name": "[TOML] Punctuation",
+      "scope": [
+        "punctuation.definition.table.toml",
+        "punctuation.definition.array.table.toml",
+        "punctuation.definition.keyValuePair.toml",
+        "punctuation.separator.toml"
+      ],
+      "settings": {
+        "foreground": "#908377"
+      }
     }
   ]
 }
