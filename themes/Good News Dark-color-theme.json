@@ -289,7 +289,7 @@
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
-        "foreground": "#7a9ab8",
+        "foreground": "#d08770",
         "fontStyle": "italic"
       }
     },
@@ -522,7 +522,7 @@
         "punctuation.start.definition.comment"
       ],
       "settings": {
-        "foreground": "#7a9ab8"
+        "foreground": "#d08770"
       }
     },
     {
@@ -862,7 +862,7 @@
       "name": "[Markdown] Markup Heading",
       "scope": "markup.heading",
       "settings": {
-        "foreground": "#b2a092"
+        "foreground": "#d08770"
       }
     },
     {
@@ -893,7 +893,7 @@
       "name": "[Markdown] Section Name",
       "scope": "entity.name.section.markdown",
       "settings": {
-        "foreground": "#7a9ab8"
+        "foreground": "#d08770"
       }
     },
     {

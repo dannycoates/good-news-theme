@@ -481,11 +481,11 @@
             "color": "#b2a092"
           },
           "comment": {
-            "color": "#7a9ab8",
+            "color": "#d08770",
             "font_style": "italic"
           },
           "comment.doc": {
-            "color": "#7a9ab8",
+            "color": "#d08770",
             "font_style": "italic"
           },
           "constant": {
@@ -601,7 +601,7 @@
             "color": "#fceee0"
           },
           "title": {
-            "color": "#b2a092",
+            "color": "#d08770",
             "font_weight": 700
           },
           "type": {
